@@ -1,0 +1,14 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	fragment@0 {
+		target-path = "/";
+		__overlay__ {
+			// 定义一个 hello_device 节点
+			hello_device {
+				compatible = "hello_device";
+			};
+		};
+	};
+};
